@@ -87,12 +87,11 @@ The following paths are specified in the assignment brief. The contents of `app/
 .
 ├── app/                         # Frontend application and assets
 ├── pages/
-│   └── checkOutPage.ts          # Playwright Page Object
+│   └── checkOutPage.ts          # Checkout page object
 ├── tests/
-│   └── example.spec.ts          # Automated test specification
+│   └── example.spec.ts          # Playwright test specification
 ├── test-documentation/
 │   ├── Test-Plan.md             # Test approach and scope
-│   ├── Test-Cases.md            # Test case details
 │   └── Test-Results.md          # Recorded execution results
 ├── package.json                # npm metadata, dependencies, and scripts
 ├── playwright.config.ts        # Playwright test configuration
