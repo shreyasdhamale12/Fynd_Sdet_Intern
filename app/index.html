@@ -1,0 +1,195 @@
+<!--  ---------------------------- Note: This written by  gpt--------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Checkout Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Mini Store</h1>
+        <p>Simple shopping, easy checkout.</p>
+    </header>
+
+
+    <main>
+
+        <!-- Product Section -->
+        <section id="products-section">
+
+            <h2>Our Products</h2>
+
+            <div class="products-container">
+
+                <!-- Coffee Mug -->
+                <div class="product-card" data-testid="product-mug">
+
+                    <img
+                        src="assets/images/mug.png"
+                        alt="Coffee Mug"
+                    >
+
+                    <h3>Coffee Mug</h3>
+
+                    <p class="price">₹250</p>
+
+                    <button id="add-mug" type="button">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Notebook -->
+                <div class="product-card" data-testid="product-notebook">
+
+                    <img
+                        src="assets/images/notebook.png"
+                        alt="Notebook"
+                    >
+
+                    <h3>Notebook</h3>
+
+                    <p class="price">₹150</p>
+
+                    <button id="add-notebook" type="button">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Shopping Cart Section -->
+        <section id="cart-section">
+
+            <h2>Your Cart</h2>
+
+
+            <!-- Cart Summary -->
+            <div id="cart-summary">
+
+                <div class="summary-card">
+
+                    <h3>Products</h3>
+
+                    <p
+                        id="total-products"
+                        data-testid="total-products">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>Total Items</h3>
+
+                    <p
+                        id="total-items"
+                        data-testid="total-items">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cart Products -->
+            <div id="cart-items">
+
+                <p id="empty-cart-message">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <!-- Order Total -->
+            <div id="order-total-section">
+
+                <h3>
+                    Order Total:
+                    <span id="order-total">₹0.00</span>
+                </h3>
+
+            </div>
+
+
+            <!-- Reset Cart -->
+            <button id="reset-cart" type="button">
+                Reset Cart
+            </button>
+
+        </section>
+
+
+        <!-- Checkout Section -->
+        <section id="checkout-section">
+
+            <h2>Checkout</h2>
+
+
+            <label for="customer-name">
+                Customer Name
+            </label>
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Enter your name"
+            >
+
+
+            <!-- Validation Message -->
+            <p
+                id="validation-message"
+                role="alert"
+                aria-live="polite">
+            </p>
+
+
+            <!-- Place Order -->
+            <button id="place-order" type="button">
+                Place Order
+            </button>
+
+        </section>
+
+
+        <!-- Order Confirmation Section -->
+        <section id="confirmation-section" hidden>
+
+            <h2>Order placed successfully!</h2>
+
+            <p id="confirmation-message"></p>
+
+            <p>
+                Order Reference:
+                <strong id="order-reference"></strong>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
